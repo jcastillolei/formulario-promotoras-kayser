@@ -1,0 +1,15 @@
+query{
+  products(hideUnavailableItems: true, from: 0, to: 49, collection: "283" )
+ {
+    productId
+    productName
+    link
+  items {
+    itemId
+    name
+    images {
+      imageUrl
+    }
+  }
+    }
+}

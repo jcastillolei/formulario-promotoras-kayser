@@ -1,0 +1,8 @@
+# import '../fragments/orderForm.gql'
+
+query orderForm($refreshOutdatedData: Boolean) {
+  orderForm(refreshOutdatedData: $refreshOutdatedData)
+    @context(provider: "vtex.store-graphql", scope: "private") {
+    ...OrderFormFragment
+  }
+}
